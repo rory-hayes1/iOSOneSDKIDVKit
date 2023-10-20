@@ -31,13 +31,34 @@ class WebViewController: UIViewController {
         webView.allowsBackForwardNavigationGestures = true
         webView.allowsLinkPreview = true
         
-        
         view.addSubview(webView)
+        let machineTokenFetcher = MachineTokenFetcher()
+        machineTokenFetcher.fetchMachineToken { result in
+            switch result {
+            case .success(let machineToken):
+                // URL encode the machine token
+                if let encodedMachineToken = machineToken.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+                    // Use the URL-encoded token to construct the URL
+                    if let url = URL(string: "https://192.168.1.105:5500/index.html?machinetoken=\(encodedMachineToken)") {
+                        let request = URLRequest(url: url)
+                        DispatchQueue.main.async {
+                            self.webView.load(request)
+                        }
+                    }
+                }
+                
+            case .failure(let error):
+                // Handle the error, e.g., show an alert
+                print("Error fetching machine token: \(error)")
+            }
+        }
+        
+        
         // Load the web page from a URL
-        if let url = URL(string: "https://192.168.1.105:5500/index.html") {
-            let request = URLRequest(url: url)
-            webView.load(request)
-         }
+//        if let url = URL(string: "https://192.168.1.105:5500/index.html") {
+//            let request = URLRequest(url: url)
+//            webView.load(request)
+//         }
     
     }
 }

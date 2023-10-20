@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98E858612AE205FA007D1892 /* MachineTokenFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E858602AE205FA007D1892 /* MachineTokenFetcher.swift */; };
 		9F75E2902AD578AF001436BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75E28F2AD578AF001436BF /* AppDelegate.swift */; };
 		9F75E2922AD578AF001436BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75E2912AD578AF001436BF /* SceneDelegate.swift */; };
 		9F75E2942AD578AF001436BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75E2932AD578AF001436BF /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98E858602AE205FA007D1892 /* MachineTokenFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineTokenFetcher.swift; sourceTree = "<group>"; };
 		9F75E28C2AD578AF001436BF /* OneSDKPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSDKPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F75E28F2AD578AF001436BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F75E2912AD578AF001436BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				9F75E2982AD578B1001436BF /* Assets.xcassets */,
 				9F75E29A2AD578B1001436BF /* LaunchScreen.storyboard */,
 				9F75E29D2AD578B1001436BF /* Info.plist */,
+				98E858602AE205FA007D1892 /* MachineTokenFetcher.swift */,
 			);
 			path = OneSDKPOC;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F75E2C22AD57A32001436BF /* JavaScriptInterface.swift in Sources */,
+				98E858612AE205FA007D1892 /* MachineTokenFetcher.swift in Sources */,
 				9F75E2942AD578AF001436BF /* ViewController.swift in Sources */,
 				9F75E2902AD578AF001436BF /* AppDelegate.swift in Sources */,
 				9F75E2922AD578AF001436BF /* SceneDelegate.swift in Sources */,
